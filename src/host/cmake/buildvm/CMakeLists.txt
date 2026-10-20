@@ -44,7 +44,7 @@ target_compile_options(buildvm PRIVATE
   ${EXTRA_COMPILER_FLAGS} ${CXX_ARCH_FLAGS})
 target_link_libraries(buildvm PRIVATE ${CXX_ARCH_FLAGS})
 if (UNIX)
-  target_link_libraries(buildvm m)
+	target_link_libraries(buildvm PRIVATE m)
 endif()
 
 if (CMAKE_OSX_ARCHITECTURES)

@@ -12,6 +12,8 @@ const char *str = "ARCHITECTURE IS Mips";
 const char *str = "ARCHITECTURE IS PowerPC";
 #elif defined(__s390__)
 const char *str = "ARCHITECTURE IS SystemZ";
+#elif defined(__riscv)
+const char *str = "ARCHITECTURE IS RiscV";
 #elif defined(__sparc__)
 const char *str = "ARCHITECTURE IS Sparc";
 #elif defined(__xcore__)
