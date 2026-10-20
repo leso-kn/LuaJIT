@@ -1896,7 +1896,7 @@ static void asm_head_root_base(ASMState *as)
 }
 
 /* Coalesce BASE register for a side trace. */
-static Reg asm_head_side_base(ASMState *as, IRIns *irp)
+static Reg asm_head_side_base(ASMState *as, IRIns *irp, RegSet allow)
 {
   IRIns *ir = IR(REF_BASE);
   Reg r = ir->r;
